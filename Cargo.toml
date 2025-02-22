@@ -1,0 +1,17 @@
+[package]
+name = "persistent-rabbit"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+chrono = { version = "0.4.39", features = ["serde"] }
+colored = "3.0.0"
+crossbeam-queue = "0.3.12"
+itertools = "0.14.0"
+lapin = "2.5.0"
+pis-aller = { git = "ssh://git@github.com/AriaBagheri/pis-aller-rs", version = "0.1.1" }
+serde = "1.0.218"
+serde_json = "1.0.139"
+standard-error = { git = "ssh://git@github.com/AriaBagheri/standard-error-rs", version = "0.1.0" }
+tokio = { version = "1.43.0", features = ["time", "sync", "rt-multi-thread", "macros", "fs"] }
+uuid = { version = "1.14.0", features = ["v4"] }
